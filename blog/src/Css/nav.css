@@ -1,0 +1,38 @@
+.Nav{
+    background-color: white;
+    color:rgb(70, 70, 70);
+    height: 50px;
+    padding: none;
+    margin: none;
+}
+.title{
+    width: auto;
+    float: left;
+    font-size: 22px;
+    font-weight: 800;
+    padding-top: 18px;
+    margin-left: 4px;
+}
+
+.navbar{
+    float: right;
+    padding:none;
+    margin:none;
+}
+
+.navbar ul{
+    padding: none;
+    margin:  none;
+}
+
+.navbar li{
+    list-style:  none;
+    display: inline;
+    margin-right: 35px;
+    font-size: 20px;
+}
+
+.navbar a{
+    color:inherit;
+    text-decoration: none;
+}

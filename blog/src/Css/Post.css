@@ -1,0 +1,8 @@
+.Post{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    border: 1px solid black;
+    margin-top: 80px;
+}
