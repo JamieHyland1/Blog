@@ -1,0 +1,26 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "Backend server for blog using graphql",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo hello",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamieHyland1/Blog.git"
+  },
+  "author": "Jamie Hyland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamieHyland1/Blog/issues"
+  },
+  "homepage": "https://github.com/JamieHyland1/Blog#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0",
+    "mongodb": "^3.6.3",
+    "nodemon": "^2.0.6"
+  }
+}

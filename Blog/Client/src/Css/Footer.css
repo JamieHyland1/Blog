@@ -1,0 +1,54 @@
+.Footer{
+    background-color: white;
+    height: 175px;
+    max-height: 70px;
+}
+.Footer a {
+    text-decoration: none;
+}
+.icons{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 50px;
+}
+.insta{
+    background-image: url('../Images/instagram.svg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center top;
+    height: 75px;
+    width: 75px;
+    content:"";
+    filter: invert(69%) sepia(31%) saturate(5800%) hue-rotate(319deg) brightness(104%) contrast(84%);
+}
+.twitter{
+    background-image: url('../Images/twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center top;
+    height: 75px;
+    width: 75px;
+    content:"";
+    filter: invert(69%) sepia(31%) saturate(5800%) hue-rotate(319deg) brightness(104%) contrast(84%);
+}
+.github{
+    background-image: url('../Images/github.svg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center top;
+    height: 75px;
+    width: 75px;
+    content:"";
+    filter: invert(69%) sepia(31%) saturate(5800%) hue-rotate(319deg) brightness(104%) contrast(84%);
+}
+.linkedin{
+    background-image: url('../Images/linkedin.svg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center top;
+    height: 75px;
+    width: 75px;
+    content:"";
+    filter: invert(69%) sepia(31%) saturate(5800%) hue-rotate(319deg) brightness(104%) contrast(84%);
+}

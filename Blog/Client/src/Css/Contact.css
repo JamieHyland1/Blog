@@ -1,0 +1,40 @@
+.Contact{
+    min-height: 500px;
+    margin-top: 100px;
+    border: 6px double #EB746C;
+    border-radius: 28px;
+    color: #Eb746c;
+}
+.ContactHeader{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 26px;
+}
+.Text{
+    width: 45%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 33px;
+    font-weight: 500;
+}
+.ContactEmail{
+    font-size: 22px;
+    color: white;
+    background-color: #EB746C;
+    height: 50px;
+    width: 214px;
+    border: 2px solid #EB746C;
+    border-radius: 16px;
+    padding-top: 5px;
+    margin-top: 92px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 4px solid #9E4039;
+}
+.ContactEmail:hover{
+    border-bottom: #Eb746c;
+}

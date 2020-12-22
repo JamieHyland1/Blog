@@ -1,0 +1,28 @@
+.Post{
+    width: auto;
+    height: fit-content;
+}
+.HeaderImage{
+    margin-left: auto;
+    margin-right: auto;
+}
+.HeaderImage img{
+  width:100%;
+}
+.titleDiv{
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.temp{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: table;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.temp img{
+    width:  100%;
+    height: 100%;
+}
