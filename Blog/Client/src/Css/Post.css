@@ -1,6 +1,9 @@
 .Post{
     width: auto;
     height: fit-content;
+    margin-top:50px;
+    text-align: center;
+    min-height: 500px;
 }
 .HeaderImage{
     margin-left: auto;

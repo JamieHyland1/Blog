@@ -1,16 +1,19 @@
 const { gql } = require('apollo-server');
-
+//const Date = require('./Resolvers/Date');
 const typeDefs = gql`
+   scalar Date
+   scalar ObjectId
+
    type Query{
-       posts: [Post]!
-       post(id:ID!):Post
+       posts: [Post]
+       post(_id:ObjectId!):Post!
    }
     type Post{
-       id: ID!
-       author: String!
-       tagline: String!
+       _id: ObjectId!
+       Title: String!
+       Tagline: String!
        paragraphs: [String]!
-       date: String!
+       date: Date!
        tags: [String]!
     }`;
 

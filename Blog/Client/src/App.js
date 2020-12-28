@@ -4,6 +4,7 @@ import Post from './Components/Post';
 import Footer from './Components/Footer';
 import Home from './Components/Home'
 import Contact from './Components/Contact';
+import Posts from './Components/Posts';
 
 import {BrowserRouter, Switch, Route} from  'react-router-dom';
 var obj = {
@@ -28,7 +29,10 @@ class App extends React.Component {
             <Home />
           </Route>
           <Route exact path="/Blog">
-            <Post obj={obj}></Post>
+            <Posts/>
+          </Route>
+          <Route exact path="/Post/:id" children={<Post/>}>
+         
           </Route>
         </Switch>
         </BrowserRouter>
