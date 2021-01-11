@@ -31,21 +31,16 @@ function Posts(){
     return (
         <div className="container">
             {data.posts.map(post=>{
-                return <Link to={        
-                    {
-                        pathname: "/Post/" + post._id,
-                        id:post._id
-                    }}>
+                return (
                     <div className="PostBlock">
-                        <div className="postImage">
-                        </div>
-                        <div key={post._id} className ="col-lg-12 ">
+                        <Link to={{pathname: "/Post/" + post._id,id:post._id}}>
+                            <div className="postImage"></div>
+                            <div key={post._id} className ="col-lg-12 ">
                             <h1>{post.Title}</h1>
-                            <hr/>
-                            <p>{post.Tagline}</p>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
-                </Link>
+                )
             })}
         </div>
     )

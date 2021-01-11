@@ -10,7 +10,7 @@
     margin-right: auto;
 }
 .HeaderImage img{
-  width:100%;
+  width:75%;
 }
 .titleDiv{
     width:500px;
@@ -28,4 +28,8 @@
 .temp img{
     width:  100%;
     height: 100%;
+}
+@media only screen and (max-width: 991px) and (min-width: 200px){
+  
+
 }

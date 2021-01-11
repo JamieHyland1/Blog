@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './Css/index.css';
 import App from './App';
 import reportWebVitals from './Testing/reportWebVitals';
+import {BrowserRouter} from 'react-router-dom'
 import { ApolloClient, InMemoryCache, gql, ApolloProvider } from '@apollo/client';
 const variables = require('dotenv').config();
 const client = new ApolloClient({
@@ -28,7 +29,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-    <App />
+     <BrowserRouter><App /></BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')

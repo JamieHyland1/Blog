@@ -30,7 +30,7 @@ class Contact extends React.Component{
                     </div>
                 </div>
                 <div className="row"> 
-                    <div className=" Text">If you'd to contact me for job opportunities or to inquire about any projects I'm working on you can contact me via my Email by clicking the button below to copy my email address to your clipboard. Alternatively you can follow me on various social media outlets, listed below in the footer! </div>
+                    <div className=" Text">If you'd like to contact me for job opportunities or to inquire about any projects I'm working on you can contact me via my Email by clicking the button below to copy my email address to your clipboard. Alternatively you can follow me on various social media outlets, listed below in the footer! </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-2"></div>

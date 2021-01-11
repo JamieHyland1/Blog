@@ -6,14 +6,11 @@ let client = new MongoClient(uri, { useUnifiedTopology: true, useNewUrlParser: t
 const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
-const Obj = require('mongodb').ObjectId
-
 
 let db
 client.connect(err => {assert.equal(null, err);});
 
 const server = new ApolloServer({typeDefs, resolvers,tracing: true,context: async()=>{
-  if(!client.isConnected()) await client.connect(err => {assert.equal(null, err);});
   db = client.db("Blog")
   
   return{db};
@@ -22,3 +19,5 @@ const server = new ApolloServer({typeDefs, resolvers,tracing: true,context: asyn
 server.listen(4000).then(() => {
   console.log(`🚀 Server ready`);
 });
+
+

@@ -28,16 +28,25 @@ class Home extends React.Component{
     }
     handleScroll(event) {
         var nav = document.getElementById('Nav');
+        
         if(window.scrollY >= this.state.border){
-           
-            nav.style.backgroundColor = this.state.red;
+            nav.style.backgroundColor = this.state.red; 
         }else{
             nav.style.backgroundColor = this.state.blue;
+        }
+        if(window.screen.width < 600){
+            var mobile = document.getElementById("icon")
+            if(window.scrollY >= this.state.border){
+                // mobile.style.backgroundColor = this.state.red; 
+                console.log("red")
+            }else{
+                // mobile.style.backgroundColor = this.state.blue;
+                console.log("blue");
+            }
         }
       
     }
     render(){
-       console.log(this.state.border)
         return(
             <div>
             <div className="Banner" id="banner"> 
@@ -45,7 +54,6 @@ class Home extends React.Component{
                 <div className="BannerTagline">Software Developer</div>
             </div>
             <div className="Home container">
-            
                 <div className="row About">
                 <div className="AboutImage col-lg-4 col-md-6 col-sm-12"></div>
                 <div className="AboutContent  col-lg-8 col-md-6 col-sm-12">
@@ -70,8 +78,8 @@ class Home extends React.Component{
                         <h3>Code</h3>
                         <div className="HobbyText">
                             I love anything related to code, its usually at the core of all my other hobbies. 
-                            I love learning new languages, and new ways to compelte tasks effeciently. 
-                            You can check out any of the work I do on my github <a href="">here</a>.
+                            I love learning new languages, and new ways to complete tasks effeciently. My favorite languages are JavaScript and C#! 
+                            You can check out any of the work I do on my github <a href="https://github.com/JamieHyland1">here</a>.
                         </div>
                     </div>
                     <div className="Hobby col-lg-4 col-md-12 col-sm-12">
@@ -79,7 +87,7 @@ class Home extends React.Component{
                         <h3>Games</h3>
                         <div className="HobbyText">
                             Gaming is the original inspiration for me learning programming! It's something I one day hope to find a career in! 
-                            Until then, however, I like to compete in various game jams, you can play those games <a href="">here</a> and read about my dev process on my blog section!
+                            Until then, however, I like to compete in various game jams, you can play those games <a href="https://jambohylando.itch.io/">here</a> and read about my dev process on my blog section!
                         </div>
                     </div>
                     <div className="Hobby col-lg-4 col-md-12 col-sm-12">
@@ -87,16 +95,16 @@ class Home extends React.Component{
                         <h3>Art</h3>
                         <div className="HobbyText">
                             Creative coding became my outlet to explore how to make art and to further my knowledge of programming through visualizing certain algorithims and just experimenting.
-                            I mainly use Processing, a java based framework and P5.js the web version of Processing you can find my webart <a href="">here</a> and some of my processing sketches on my github!
+                            I mainly use Processing, a java based framework and P5.js the web version of Processing you can find my webart <a href="https://www.openprocessing.org/user/215362">here</a> and some of my processing sketches on my github!
                         </div>
                     </div>
                 </div>
             
-                <div className="row TimeLine" id="Timeline"><div className="TimeLineText">My TimeLine</div></div>
+                <div className="row TimeLine" id="Timeline"><div className="col-lg-12 col-md-12 col-sm-12 TimeLineText">My TimeLine</div></div>
             
                 <div className="row Arrow"></div>
             
-                <div className="row container-fluid IADT" id="IADT">
+                <div className="row IADT" id="IADT">
                     
                     <div className="row CollegeTitle">2014-2017</div>
                     <div className="row CollegeContent">
@@ -126,7 +134,7 @@ class Home extends React.Component{
             
                 <div className="row Arrow"></div>
             
-                <div className="row container-fluid DCU">
+                <div className="row DCU">
                     <div className="row CollegeTitle">2017-2020</div>
                     <div className="row CollegeContent">
                         <div className="Column col-lg-4 col-md-12 col-sm-12">
@@ -155,7 +163,7 @@ class Home extends React.Component{
             
                 <div className="row Arrow"></div>
             
-                <div className="row container-fluid DCU">
+                <div className="row DCU">
                     <div className="row CollegeTitle">Present</div>
                     <div className="row CollegeContent">
                         <div className="Column col-lg-4 col-md-12 col-sm-12">

@@ -4,8 +4,9 @@ function Title(props){
     return(
         <div className="Title">
             <h1>{props.title}</h1>
-            <div> <div className="author">{props.author} |</div>{props.tagline}</div>
+           <p>{props.Date}</p>
         </div>
+        
     )
 }
 

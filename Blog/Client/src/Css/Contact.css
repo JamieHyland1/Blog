@@ -38,3 +38,12 @@
 .ContactEmail:hover{
     border-bottom: #Eb746c;
 }
+@media only screen and (max-width: 991px) and (min-width: 200px){
+    .Text{
+        width: 90%;
+    }
+    .ContactEmail{
+        font-size: 19px;
+    }
+
+}
