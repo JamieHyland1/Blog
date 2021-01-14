@@ -15,6 +15,7 @@ const typeDefs = gql`
        paragraphs: [String]!
        date: Date!
        tags: [String]!
+       photoIDs: [String]
     }`;
 
 module.exports = typeDefs;

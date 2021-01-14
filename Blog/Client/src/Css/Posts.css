@@ -41,7 +41,7 @@ a:active {
     filter: blur(4px);
 }
 .postImage{
- background-image: url("../Images/hello_world.png");
+ /* background-image: url("../Images/hello_world.png"); */
  background-position: center;
  background-repeat: no-repeat, repeat;
  background-size: 94%;

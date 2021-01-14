@@ -1,14 +1,13 @@
 import { useQuery, gql } from '@apollo/client';
 import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
 import '../Css/bootstrap/bootstrap.min.css';
 import '../Css/bootstrap/bootstrap-grid.css';
 import '../Css/Post.css';
-import React from 'react';
 import Title from './Title';
 import Article from './Article';
 import image from '../Images/web.jpg';
 import temp from '../Images/temp.jpeg';
-
 
 
 const GET_POST = gql`
@@ -20,31 +19,40 @@ query Query($postId: ObjectId!) {
     paragraphs
     tags
     _id
+    photoIDs
   }
 }
 `;
 
 function Post(){
   var {id} = useParams();
-  console.log(id)
-    const {loading, err, data} = useQuery(GET_POST,{
+  var postData = {};
+  const {loading, err, data} = useQuery(GET_POST,{
         variables: {postId: id},
         pollInterval:1500,
     });
+    
+    
     if(loading)return<p>loading....</p>
     if(err)return<p>error.... :(</p>;
-    if(!err && !loading)console.log("DATA",data)
+    if(!err && !loading){
+      postData = JSON.parse(JSON.stringify(data))
+    }
+    
     return (
           <div className="container">
             <div className="Post col-lg-12">
-            <div className="HeaderImage"><img src={image} alt="header image" /></div>
+            <div className="HeaderImage"><img src={"http://jamies-blog-media.imgix.net/"+postData.post.photoIDs.shift()} alt="header image" /></div>
             <div className="titleDiv"><Title title={data.post.Title} author={data.post.date} tagline={data.post.Tagline}/></div>
-            {data.post.paragraphs.map(articleText =>(
+            {postData.post.paragraphs.map(articleText =>(
                     <div>
                         <br></br>
                         <Article text={articleText}/>
                         <br></br>
-                        <div className="temp"><img src={temp}/></div>
+                        {(articleText.includes("<IMAGE>") && postData.post.photoIDs.length > 0)?<div><img src={`http://jamies-blog-media.imgix.net/${postData.post.photoIDs.shift()}`}></img></div>:<div></div>
+                        
+                        }
+                     
                     </div>
                 ))}
                 </div>

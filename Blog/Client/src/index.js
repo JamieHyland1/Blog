@@ -10,22 +10,6 @@ const client = new ApolloClient({
   uri: "http://localhost:4000",
   cache: new InMemoryCache()
 });
-// client.query({
-//     query: gql`
-//       query posts {
-//         posts{
-//           _id
-//           Title
-//           Tagline
-//           paragraphs
-//           tags
-//           date
-//         }
-//       }
-//     `
-//   }).then(result=>console.log(result))
-//   .catch(err=>console.log("err"))
-
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>

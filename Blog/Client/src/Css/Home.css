@@ -12,7 +12,7 @@
 }
 .Banner::after{
     content: "";
-    background-image: url("../Images/web.jpg");
+    background-image: url("http://jamies-blog-media.imgix.net/web.jpg");
     background-position: center;
     background-repeat: no-repeat, repeat;
     background-size: cover;
@@ -53,7 +53,7 @@
     border-radius: 6px;
 }
 .AboutImage{
-    background-image: url('../Images/question.svg');
+    background-image: url('http://jamies-blog-media.imgix.net/question.svg');
     background-position: center;
     background-repeat: no-repeat, repeat;
     background-size: 80%;
@@ -113,7 +113,7 @@
     text-decoration: underline solid white;
 }
 .Code{
-    background-image: url('../Images/code.svg');
+    background-image: url('http://jamies-blog-media.imgix.net/code.svg');
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center top;
@@ -122,7 +122,7 @@
     height: 105px;
 }
 .Games{
-    background-image: url('../Images/joystick.svg');
+    background-image: url('http://jamies-blog-media.imgix.net/joystick.svg');
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center top;
@@ -131,7 +131,7 @@
     height: 105px;
 }
 .Art{
-    background-image: url('../Images/art.svg');
+    background-image: url('http://jamies-blog-media.imgix.net/art.svg');
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center top;
@@ -161,7 +161,7 @@
     margin-bottom: auto;
 }
 .Arrow{
-    background-image: url('../Images/arrow.svg');
+    background-image: url('http://jamies-blog-media.imgix.net/arrow.svg');
     background-position: center;
     background-repeat: no-repeat, repeat;
     height: 100px;
@@ -194,7 +194,7 @@
     color: white;
 }
 .CollegeDegree{
-    background-image: url('../Images/degree.png');
+    background-image: url('http://jamies-blog-media.imgix.net/degree.png');
     background-position: center;
     background-repeat: no-repeat, repeat;
     height:inherit;
@@ -216,7 +216,7 @@
     color:white;
 }
 .Present{
-    background-image: url('../Images/gear.svg');
+    background-image: url('http://jamies-blog-media.imgix.net//gear.svg');
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat, repeat;

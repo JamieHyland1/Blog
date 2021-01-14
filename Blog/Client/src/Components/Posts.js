@@ -14,6 +14,7 @@ const GET_POSTS = gql`
             paragraphs
             tags
             date
+            photoIDs
         }
 }
 `;
@@ -34,7 +35,7 @@ function Posts(){
                 return (
                     <div className="PostBlock">
                         <Link to={{pathname: "/Post/" + post._id,id:post._id}}>
-                            <div className="postImage"></div>
+                            <div className="postImage" style={{backgroundImage:`url(http://jamies-blog-media.imgix.net/${post.photoIDs[0]}?fit=max)`}}></div>
                             <div key={post._id} className ="col-lg-12 ">
                             <h1>{post.Title}</h1>
                             </div>
