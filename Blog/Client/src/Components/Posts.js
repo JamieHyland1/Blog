@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import '../Css/bootstrap/bootstrap.min.css';
 import '../Css/bootstrap/bootstrap-grid.css';
 import '../Css/Posts.css';
-import temp from '../Images/temp.jpeg';
+
 
 const GET_POSTS = gql`
     query posts {

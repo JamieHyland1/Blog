@@ -1,14 +1,11 @@
 import { useQuery, gql } from '@apollo/client';
 import { useParams } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 import '../Css/bootstrap/bootstrap.min.css';
 import '../Css/bootstrap/bootstrap-grid.css';
 import '../Css/Post.css';
 import Title from './Title';
 import Article from './Article';
-import image from '../Images/web.jpg';
-import temp from '../Images/temp.jpeg';
-
 
 const GET_POST = gql`
 query Query($postId: ObjectId!) {
@@ -42,14 +39,14 @@ function Post(){
     return (
           <div className="container">
             <div className="Post col-lg-12">
-            <div className="HeaderImage"><img src={"http://jamies-blog-media.imgix.net/"+postData.post.photoIDs.shift()} alt="header image" /></div>
+            <div className="HeaderImage"><img src={"http://jamies-blog-media.imgix.net/"+postData.post.photoIDs.shift()} alt="header" /></div>
             <div className="titleDiv"><Title title={data.post.Title} author={data.post.date} tagline={data.post.Tagline}/></div>
             {postData.post.paragraphs.map(articleText =>(
                     <div>
                         <br></br>
-                        <Article text={articleText}/>
+                        <Article text={articleText} key={articleText.length}/>
                         <br></br>
-                        {(articleText.includes("<IMAGE>") && postData.post.photoIDs.length > 0)?<div><img src={`http://jamies-blog-media.imgix.net/${postData.post.photoIDs.shift()}`}></img></div>:<div></div>
+                        {(articleText.includes("<IMAGE>") && postData.post.photoIDs.length > 0)?<div><img src={`http://jamies-blog-media.imgix.net/${postData.post.photoIDs.shift()}`} alt="article info"></img></div>:<div></div>
                         
                         }
                      

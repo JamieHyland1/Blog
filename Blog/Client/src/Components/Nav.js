@@ -1,12 +1,10 @@
 import '../Css/nav.css';
 import '../Css/bootstrap/bootstrap.min.css'
-import {TransitionGroup,CSSTransition} from "react-transition-group";
-import {Link, Switch, Route, useLocation} from  'react-router-dom';
+import {Link} from  'react-router-dom';
 import {useState} from 'react';
 function Nav(){
     
     const [buttonOpen, buttonPressed] = useState(false);
-    const [color, checkColor] = useState("#76AFEB");
     return(
         <div className="Nav fixed-top" id="Nav">
             <div className="title"><Link to="/">Jamie Hyland</Link></div>

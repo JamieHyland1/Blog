@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 import Home from './Components/Home'
 import Contact from './Components/Contact';
 import Posts from './Components/Posts';
-import {Switch, Route, useLocation} from  'react-router-dom';
+import {Switch, Route} from  'react-router-dom';
 function App (){
   return (
     <div>

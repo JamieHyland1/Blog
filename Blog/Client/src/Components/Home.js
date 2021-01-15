@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './Nav';
+
 import '../Css/bootstrap/bootstrap.min.css';
 import '../Css/bootstrap/bootstrap-grid.css';
 import '../Css/Home.css';
@@ -33,18 +33,7 @@ class Home extends React.Component{
             nav.style.backgroundColor = this.state.red; 
         }else{
             nav.style.backgroundColor = this.state.blue;
-        }
-        if(window.screen.width < 600){
-            var mobile = document.getElementById("icon")
-            if(window.scrollY >= this.state.border){
-                // mobile.style.backgroundColor = this.state.red; 
-                console.log("red")
-            }else{
-                // mobile.style.backgroundColor = this.state.blue;
-                console.log("blue");
-            }
-        }
-      
+        }      
     }
     render(){
         return(

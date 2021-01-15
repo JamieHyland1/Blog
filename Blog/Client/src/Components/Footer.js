@@ -1,8 +1,6 @@
 import '../Css/bootstrap/bootstrap.min.css';
 import '../Css/Footer.css';
-import github from '../Images/github.png';
-import twitter from '../Images/twitter.png';
-import insta from '../Images/insta.png';
+
 function Footer(){
     return(
         <div className="Footer">
