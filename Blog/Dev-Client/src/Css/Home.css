@@ -56,17 +56,19 @@
     background-image: url('http://jamies-blog-media.imgix.net/question.svg');
     background-position: center;
     background-repeat: no-repeat, repeat;
-    background-size: 80%;
-    min-height: 450px;
+    background-size: 57%;
+    min-height: 380px;
     filter: invert(73%) sepia(8%) saturate(4144%) hue-rotate(182deg) brightness(96%) contrast(91%);
+    background-position-y: top;
+    margin-top: 53px;
 }
 .AboutImage::after{
     content: "About me";
     font-weight: bolder;
     position: absolute;
-    font-size: 45px;
-    top: 370px;
-    left: 80px;
+    font-size: 39px;
+    top: 200px;
+    left: 99px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -242,8 +244,8 @@
     }
     .AboutImage::after{
         font-size: 44px;
-        top: 386px;
-        left: 62px;
+        top: 348px;
+        left: 131px;
     }
     .Code{
         background-size: 21%;

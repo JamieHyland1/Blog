@@ -49,12 +49,7 @@ class Home extends React.Component{
                     <div>
                         Hi there I'm Jamie Hyland a Software engineer from Dublin Ireland. 
                         Thanks for visiting my site! The purpose of this site is to tell you a little bit about my self, my education, skills and hobbies. 
-                        I find that CV's can be a little lacking in conveying a person fully so hopefully this website will give you the full an idea of who I am! 
-                        I am skilled in the areas of Web Development with my final year Project in IADT and my third Year project both consisting of web based apps that utilized real time streaming using websockets and front end frameworks like React.js. 
-                        I have worked for companies like Logitech, where I worked on a small team with designers and 3D modellers to incoorporate Logitechs brand of wireless speakers with AR/VR experiences using the Unity Game Engine. 
-                        In my third year of DCU I worked in SAP Dublins design team which focues on open source technologies on a small proof of concept called Smart Collab, a web based application that was made to improve business meetings using WebRTC, Socket.io and Angularjs. 
-                        My main role was implementing UI/UX changes by the design team, incorporating core features into the systems backend and implementing key bug fixes to get the application ready for its alpha launch. 
-                        In my final Year of studying in DCU I tutored two different modules Computability and Complexity and Web Design. 
+                        I find that CV's can be a little lacking in conveying a person fully so hopefully this website will give you the full an idea of who I am! I have obtained two degrees, Computing in Multimedia from IADT and DCU's Computer Applications and Software Engineering program. I've worked for companies like Logitech and SAP and worked as a software engineer and fullstack developer working on open source technologies. I have a love of Game Development and Web Development! I love working on generative art using code and plan to use this website as a portfolio and blog to keep a record of all the stuff I'm doing!
                     </div>
                 </div>
                 </div>
@@ -68,7 +63,7 @@ class Home extends React.Component{
                         <div className="HobbyText">
                             I love anything related to code, its usually at the core of all my other hobbies. 
                             I love learning new languages, and new ways to complete tasks effeciently. My favorite languages are JavaScript and C#! 
-                            You can check out any of the work I do on my github <a href="https://github.com/JamieHyland1">here</a>.
+                            You can check out any of the work I do on my github <a href="https://github.com/JamieHyland1" target="_blank" rel="noopener noreferrer">here</a>.
                         </div>
                     </div>
                     <div className="Hobby col-lg-4 col-md-12 col-sm-12">
@@ -76,7 +71,7 @@ class Home extends React.Component{
                         <h3>Games</h3>
                         <div className="HobbyText">
                             Gaming is the original inspiration for me learning programming! It's something I one day hope to find a career in! 
-                            Until then, however, I like to compete in various game jams, you can play those games <a href="https://jambohylando.itch.io/">here</a> and read about my dev process on my blog section!
+                            Until then, however, I like to compete in various game jams, you can play those games <a href="https://jambohylando.itch.io/" target="_blank" rel="noopener noreferrer">here</a> and read about my dev process on my blog section!
                         </div>
                     </div>
                     <div className="Hobby col-lg-4 col-md-12 col-sm-12">
@@ -84,7 +79,7 @@ class Home extends React.Component{
                         <h3>Art</h3>
                         <div className="HobbyText">
                             Creative coding became my outlet to explore how to make art and to further my knowledge of programming through visualizing certain algorithims and just experimenting.
-                            I mainly use Processing, a java based framework and P5.js the web version of Processing you can find my webart <a href="https://www.openprocessing.org/user/215362">here</a> and some of my processing sketches on my github!
+                            I mainly use Processing, a java based framework and P5.js the web version of Processing you can find my webart <a href="https://www.openprocessing.org/user/215362" target="_blank" rel="noopener noreferrer">here</a> and some of my processing sketches on my github!
                         </div>
                     </div>
                 </div>
