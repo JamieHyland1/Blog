@@ -154,7 +154,7 @@ class Home extends React.Component{
                             <h3>What now?</h3>
                             <hr/>
                             <div className="text">
-                                Well right now I'm currently looking for work, I have interests in web developement (this website was designed and built by me in React ;)..) and game development.
+                                Well right now I'm currently looking for work, I have interests in web developement (this website was designed and built by me in React!) and game development.
                                 I'm also profficient in Java, C# and javascript.
                                 Until I find work however, I'm going to be working on some projects I've been wanting to pursue but didn't have time for due to college. 
                                 You can keep up to date with those various projects on the blog section of this website!

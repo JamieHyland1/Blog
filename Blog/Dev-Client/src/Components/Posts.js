@@ -23,10 +23,8 @@ function Posts(){
     const { loading, error, data } = useQuery(GET_POSTS, {
         pollInterval:500
     });
-    if(loading){
-        return <div><p>loading...</p></div>
-    }
-    if(error)return <p>oops...there was an error</p>
+   
+    if(error  || loading)return <div className="container"><div className="error"></div></div>
     if(!error || !loading){console.log("DATA",data.posts[0])}
 
     return (

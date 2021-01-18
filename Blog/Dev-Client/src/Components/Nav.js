@@ -5,6 +5,9 @@ import {useState} from 'react';
 function Nav(){
     
     const [buttonOpen, buttonPressed] = useState(false);
+    const navClick = ()=>{
+        buttonPressed(false);
+    }
     return(
         <div className="Nav fixed-top" id="Nav">
             <div className="title"><Link to="/">Jamie Hyland</Link></div>
@@ -12,9 +15,9 @@ function Nav(){
             <div className="icon" onClick={()=>buttonPressed(!buttonOpen)}>&#9776;</div>
                 <div className={buttonOpen ? 'mobile fade-in': 'navbar'}>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Blog">Blog</Link></li>
-                        <li><Link to="/Contact">Contact</Link></li> 
+                        <li><Link to="/" onClick={navClick}>Home</Link></li>
+                        <li><Link to="/Blog" onClick={navClick}>Blog</Link></li>
+                        <li><Link to="/Contact" onClick={navClick}>Contact</Link></li> 
                     </ul>
                 </div>
             </div>

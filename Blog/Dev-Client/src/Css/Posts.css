@@ -49,3 +49,26 @@ a:active {
  width: inherit;
  height:350px;
 }
+.error{
+    background-image: url(http://jamies-blog-media.imgix.net/fix.svg);
+    background-position: center top;
+    background-position-y: 25px;
+    background-repeat: no-repeat, repeat;
+    background-size: 46%;
+    filter: invert(73%) sepia(8%) saturate(4144%) hue-rotate(182deg) brightness(96%) contrast(91%);
+    margin-top: 90px;
+    height: 400px;
+    width: 755px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.error::after{
+    content: "Blog is currently under going maintenance!";
+    font-size: 29px;
+    font-weight: 800;
+    margin-left: auto;
+    position: absolute;
+    margin-right: auto;
+    top: 368px;
+    left: 75px;
+}
